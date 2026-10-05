@@ -7,16 +7,13 @@ int main(){
 	int qntE=0, qntJ=0, menu=0, i=1; //Equipes, Jogos, Menu, incremento
 	int vt, em, dt, soma, pnt; //vitoria, empate, derrota, soma, pontuação
 	
-	
 	while(qntE>10 || qntE<3){
 		printf("Digite a quantidade de equipes(3 a 10): ");
 		scanf("%d", &qntE);
 	}  //verifica a validade do valor qntE
-
 	
 	while(qntJ>10 || qntJ<1){
-		printf("Valor invalido!\n");
-		printf("digite a quantidade de jogos disputados(1 a 10):");
+		printf("\nDigite a quantidade de jogos disputados(1 a 10):");
 		scanf("%d", &qntJ);
 	}  //verifica a validade do valor qntJ
 	
@@ -24,7 +21,7 @@ int main(){
 	while(menu<1 || menu>5){
 		printf("== Menu ==\n1 - Registrar resultados do campeonato\n2 - Mostrar resumo do campeonato\n3 - Mostrar regulamento\n4 - Simular campanha de uma equipe\n5 - Encerrar sistema\nEscolha uma opção: ");
 		scanf("%d", &menu);
-	}
+	} //Verifica e mostra menu
 	
 	switch(menu){
 		case 1:
